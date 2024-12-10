@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonial Connect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f8fa;
+        }
+
+        header {
+            background-color: #6c63ff;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .profile-section {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .profile-card h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .profile-card p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .profile-card button {
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .profile-card button:hover {
+            background-color: #5348c3;
+        }
+
+        .timeline-section {
+            margin-top: 40px;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+            padding: 20px 0;
+            width: 80%;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background: #6c63ff;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+            text-align: left;
+        }
+
+        .timeline-item .content {
+            display: inline-block;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-item.left .content {
+            margin-right: 20px;
+        }
+
+        .timeline-item.right .content {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #6c63ff;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Matrimonial Connect</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Profiles</a>
+            <a href="#">Chat</a>
+            <a href="#">Timeline</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="profile-section">
+            <div class="profile-card">
+                <img src="https://via.placeholder.com/100" alt="Profile">
+                <h3>Priya Sharma</h3>
+                <p>Age: 28 | Bangalore</p>
+                <p>Occupation: Software Engineer</p>
+                <button>View Profile</button>
+            </div>
+            <div class="profile-card">
+                <img src="https://via.placeholder.com/100" alt="Profile">
+                <h3>Rohan Verma</h3>
+                <p>Age: 30 | Delhi</p>
+                <p>Occupation: Architect</p>
+                <button>View Profile</button>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <h2 style="text-align: center;">Timeline of Interaction</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <p><strong>Stage 1:</strong> Profile Matched</p>
+                        <p>Priya and Rohan's profiles matched based on preferences.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="content">
+                        <p><strong>Stage 2:</strong> Families Interacted</p>
+                        <p>Their families had an initial video call to understand expectations.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="content">
+                        <p><strong>Stage 3:</strong> In-person Meeting</p>
+                        <p>An informal meeting was organized between both families.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Connecting Hearts, Building Families | Matrimonial Connect &copy; 2024</p>
+    </footer>
+</body>
+
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Components Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.0.0/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.0.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/babel-standalone@7.18.9/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // React Component: List of Items
+        function ItemList() {
+            const [items, setItems] = React.useState(["Apple", "Banana", "Orange"]);
+
+            const addItem = () => {
+                const newItem = prompt("Enter a new item:");
+                if (newItem) {
+                    setItems([...items, newItem]);
+                }
+            };
+
+            return (
+                <div>
+                    <h2>Fruit List</h2>
+                    <ul>
+                        {items.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                    <button onClick={addItem}>Add Item</button>
+                </div>
+            );
+        }
+
+        // Render the ItemList Component
+        ReactDOM.render(<ItemList />, document.getElementById('root'));
+    </script>
+</body>
+</html> -->
